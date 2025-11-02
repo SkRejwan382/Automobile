@@ -1,0 +1,89 @@
+:root{
+  --bg:#05060a;
+  --card:#081018;
+  --muted:#9aa7b2;
+  --gold:#d9a03a;
+  --glass: rgba(255,255,255,0.03);
+  --accent: linear-gradient(90deg,#e6b75a,#ffd89b);
+  --radius:18px;
+  --glass-2: rgba(255,255,255,0.02);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,Arial,sans-serif;background:radial-gradient(1200px 600px at 10% 10%, rgba(217,160,58,0.06), transparent),var(--bg);color:#eef2f5;-webkit-font-smoothing:antialiased}
+
+/* NAV */
+header{position:fixed;left:0;right:0;top:18px;display:flex;align-items:center;justify-content:space-between;padding:12px 6%;z-index:60;backdrop-filter:blur(6px)}
+.nav-inner{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:10px 16px;border-radius:14px;display:flex;gap:20px;align-items:center;width:100%;max-width:1200px}
+.brand{display:flex;gap:12px;align-items:center}
+.logo{width:54px;height:54;border-radius:12px;background:linear-gradient(135deg,#fff0cf,#e6b75a);display:flex;align-items:center;justify-content:center;font-family:'Playfair Display',serif;color:#0b1c21;font-weight:700}
+.brand h1{margin:0;font-family:'Playfair Display',serif;font-size:18px}
+nav{margin-left:auto;display:flex;gap:12px}
+.link{padding:8px 12px;border-radius:10px;color:var(--muted);text-decoration:none;font-weight:600}
+.cta{background:var(--gold);color:#071018;padding:8px 14px;border-radius:10px;font-weight:700}
+
+/* HERO */
+.hero{height:88vh;display:flex;align-items:center;justify-content:center;padding:0 6%;position:relative;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1542367597-6f53f3b5d399?auto=format&fit=crop&w=1600&q=60');background-size:cover;background-position:center;transform:scale(1.08);filter:grayscale(10%) contrast(85%) brightness(0.45);z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(2,6,11,0.2),rgba(2,6,11,0.6));z-index:1}
+.hero-content{position:relative;z-index:10;display:flex;gap:36px;align-items:center;max-width:1200px;width:100%}
+
+.left{flex:1}
+.eyebrow{color:var(--gold);font-weight:700;letter-spacing:1px}
+h2{font-family:'Playfair Display',serif;font-size:48px;margin:8px 0 12px;line-height:1.02}
+p.lead{color:var(--muted);max-width:650px}
+
+.search-bar{margin-top:22px;background:linear-gradient(180deg,rgba(255,255,255,0.03),transparent);padding:12px;border-radius:14px;display:flex;gap:10px;backdrop-filter:blur(6px)}
+.search-bar input,.search-bar select{background:transparent;border:0;padding:12px 14px;color:#fff;outline:none;font-weight:600}
+.search-btn{background:linear-gradient(90deg,#e6b75a,#ffd89b);padding:10px 16px;border-radius:12px;border:0;font-weight:700;color:#071018;cursor:pointer}
+
+.right{width:520px}
+.card-hero{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:18px;border-radius:16px;border:1px solid rgba(255,255,255,0.04);box-shadow:0 10px 40px rgba(2,6,11,0.6);position:relative;overflow:hidden}
+.car-img{width:100%;height:320px;object-fit:cover;border-radius:12px;transition:transform .8s cubic-bezier(.2,.9,.3,1)}
+.card-hero:hover .car-img{transform:translateY(-8px) scale(1.02)}
+.price{display:flex;align-items:center;justify-content:space-between;margin-top:12px}
+.price .val{font-weight:800;color:var(--gold);font-size:20px}
+
+/* FEATURES */
+section.features{padding:64px 6% 40px;background:transparent}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;max-width:1200px;margin:0 auto}
+.feature-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:18px;border-radius:14px;border:1px solid rgba(255,255,255,0.03);display:flex;gap:12px;align-items:center}
+.feature-card .icon{width:56px;height:56;border-radius:12px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gold)}
+.feature-card h4{margin:0}
+.feature-card p{margin:6px 0 0;color:var(--muted)}
+
+/* CAR LIST */
+section.cars{padding:40px 6%;max-width:1200px;margin:0 auto}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px}
+.car{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);border-radius:14px;padding:14px;border:1px solid rgba(255,255,255,0.03);position:relative;overflow:hidden;transition:transform .32s ease,box-shadow .32s ease}
+.car:hover{transform:translateY(-8px);box-shadow:0 20px 50px rgba(2,6,11,0.6)}
+.car img{width:100%;height:160px;object-fit:cover;border-radius:10px}
+.badge{position:absolute;top:12px;left:12px;background:rgba(7,18,24,0.6);padding:8px 12px;border-radius:999px;font-weight:700;color:var(--gold)}
+.car h3{margin:10px 0 6px;font-size:18px}
+.meta{color:var(--muted);font-size:13px}
+.cta-row{display:flex;gap:10px;margin-top:12px}
+.btn-ghost{padding:8px 12px;border-radius:10px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;cursor:pointer}
+.btn-primary{padding:8px 12px;border-radius:10px;background:var(--gold);color:#071018;border:0;cursor:pointer}
+
+/* CONTACT */
+section.contact{padding:56px 6%;background:linear-gradient(180deg,transparent,rgba(2,6,11,0.02));}
+.contact-wrap{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 420px;gap:30px}
+.contact-card{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+.form-row{display:flex;gap:10px}
+input,textarea{width:100%;padding:12px;border-radius:10px;border:0;background:rgba(255,255,255,0.02);color:#fff;outline:none}
+textarea{min-height:140px}
+
+/* FOOTER */
+footer{padding:36px 6%;border-top:1px solid rgba(255,255,255,0.03);display:flex;justify-content:space-between;align-items:center}
+
+/* small responsive */
+@media (max-width:980px){
+  .hero-content{flex-direction:column-reverse}
+  .right{width:100%}
+  .grid{grid-template-columns:1fr}
+  .contact-wrap{grid-template-columns:1fr}
+}
+
+/* subtle animations */
+.fade-up{opacity:0;transform:translateY(8px);transition:opacity .6s ease,transform .6s cubic-bezier(.2,.9,.3,1)}
+.fade-up.in{opacity:1;transform:none}

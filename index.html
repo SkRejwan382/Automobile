@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>RenewAuto — Luxury Showroom</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-inner">
+      <div class="brand">
+        <div class="logo">RA</div>
+        <div>
+          <h1>RenewAuto</h1>
+          <div class="small" style="color:var(--muted);font-size:12px">Curated pre-owned luxury cars</div>
+        </div>
+      </div>
+      <nav>
+        <a class="link" href="#inventory">Inventory</a>
+        <a class="link" href="#services">Services</a>
+        <a class="link" href="#contact">Contact</a>
+        <a class="cta" href="#contact">Schedule Visit</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+    <div class="hero-content">
+      <div class="left fade-up">
+        <div class="eyebrow">LUXURY • CERTIFIED</div>
+        <h2>Drive Prestige. <br>Own Confidence.</h2>
+        <p class="lead">Hand-picked luxury pre-owned cars, inspected by certified technicians. Transparent pricing, flexible financing & white-glove service.</p>
+
+        <div class="search-bar">
+          <input placeholder="Search make, model or year" id="q">
+          <select aria-label="budget">
+            <option value="">Any Budget</option>
+            <option>Under ₹5L</option>
+            <option>₹5L — ₹10L</option>
+            <option>₹10L+</option>
+          </select>
+          <button class="search-btn">Discover</button>
+        </div>
+      </div>
+
+      <div class="right fade-up">
+        <div class="card-hero">
+          <img class="car-img" src="https://images.unsplash.com/photo-1605727216807-6d5b5c4b3a3b?auto=format&fit=crop&w=1200&q=70" alt="featured car">
+          <div style="display:flex;justify-content:space-between;align-items:center">
+            <div>
+              <div style="font-weight:700;font-size:16px">2020 Mercedes-Benz C-Class</div>
+              <div class="small" style="color:var(--muted)">Fully serviced • 35,000 km</div>
+            </div>
+            <div class="price"><div class="val">₹28,50,000</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="features" id="services">
+    <div class="grid">
+      <div class="feature-card fade-up">
+        <div class="icon">✓</div>
+        <div>
+          <h4>Certified Inspection</h4>
+          <p>100+ point inspection by trained mechanics.</p>
+        </div>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="icon">⚡</div>
+        <div>
+          <h4>White-glove Delivery</h4>
+          <p>Doorstep delivery with professional handover.</p>
+        </div>
+      </div>
+
+      <div class="feature-card fade-up">
+        <div class="icon">🛡️</div>
+        <div>
+          <h4>Warranty & Support</h4>
+          <p>Flexible warranty packages and roadside assistance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cars" id="inventory">
+    <h2 style="text-align:center;margin-bottom:18px">Featured Inventory</h2>
+    <div class="cards">
+      <div class="car fade-up">
+        <div class="badge">Certified</div>
+        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1200&q=70" alt="car1">
+        <h3>2019 BMW 5 Series</h3>
+        <div class="meta">Diesel • 42,000 km • Automatic</div>
+        <div class="cta-row">
+          <button class="btn-ghost">View</button>
+          <button class="btn-primary">Contact</button>
+        </div>
+      </div>
+
+      <div class="car fade-up">
+        <div class="badge">New</div>
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=70" alt="car2">
+        <h3>2018 Audi A6</h3>
+        <div class="meta">Petrol • 55,000 km • Automatic</div>
+        <div class="cta-row">
+          <button class="btn-ghost">View</button>
+          <button class="btn-primary">Contact</button>
+        </div>
+      </div>
+
+      <div class="car fade-up">
+        <div class="badge">Hot</div>
+        <img src="https://images.unsplash.com/photo-1519642918688-7e43b1923f8a?auto=format&fit=crop&w=1200&q=70" alt="car3">
+        <h3>2020 Jaguar XE</h3>
+        <div class="meta">Petrol • 30,000 km • Manual</div>
+        <div class="cta-row">
+          <button class="btn-ghost">View</button>
+          <button class="btn-primary">Contact</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-wrap">
+      <div class="contact-card fade-up">
+        <h3>Get in touch</h3>
+        <p class="small">Schedule a test drive or request more details — our concierge will assist you.</p>
+        <div style="height:14px"></div>
+        <div class="form-row">
+          <input placeholder="Your name">
+          <input placeholder="Phone / WhatsApp">
+        </div>
+        <div style="height:10px"></div>
+        <input placeholder="Email">
+        <div style="height:10px"></div>
+        <textarea placeholder="Message"></textarea>
+        <div style="height:12px"></div>
+        <button class="btn-primary">Send Message</button>
+      </div>
+
+      <div class="contact-card fade-up">
+        <h4>Visit our showroom</h4>
+        <p class="small">123 Prestige Drive, Mumbai</p>
+        <div style="height:12px"></div>
+        <div style="display:flex;gap:8px;align-items:center"><div style="width:46px;height:46px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center">📞</div><div>+91 98765 43210</div></div>
+        <div style="height:12px"></div>
+        <div style="display:flex;gap:10px;margin-top:10px">
+          <div style="padding:10px;border-radius:10px;background:rgba(255,255,255,0.02);">Financing</div>
+          <div style="padding:10px;border-radius:10px;background:rgba(255,255,255,0.02);">Warranty</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div>© 2025 RenewAuto — Luxury Showroom</div>
+    <div class="small" style="color:var(--muted)">Made with care • Certified pre-owned</div>
+  </footer>
+
+  <script>
+    const obs = new IntersectionObserver((entries)=>{
+      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in') })
+    },{threshold:0.08})
+    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el))
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        e.preventDefault();
+        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+      })
+    })
+  </script>
+</body>
+</html>
