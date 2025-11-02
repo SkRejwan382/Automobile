@@ -1,13 +1,17 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>RenewAuto — Luxury Showroom</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>
     <div class="nav-inner">
@@ -34,7 +38,8 @@
       <div class="left fade-up">
         <div class="eyebrow">LUXURY • CERTIFIED</div>
         <h2>Drive Prestige. <br>Own Confidence.</h2>
-        <p class="lead">Hand-picked luxury pre-owned cars, inspected by certified technicians. Transparent pricing, flexible financing & white-glove service.</p>
+        <p class="lead">Hand-picked luxury pre-owned cars, inspected by certified technicians. Transparent pricing,
+          flexible financing & white-glove service.</p>
 
         <div class="search-bar">
           <input placeholder="Search make, model or year" id="q">
@@ -50,13 +55,17 @@
 
       <div class="right fade-up">
         <div class="card-hero">
-          <img class="car-img" src="https://images.unsplash.com/photo-1605727216807-6d5b5c4b3a3b?auto=format&fit=crop&w=1200&q=70" alt="featured car">
+          <img class="car-img"
+            src="https://images.unsplash.com/photo-1605727216807-6d5b5c4b3a3b?auto=format&fit=crop&w=1200&q=70"
+            alt="featured car">
           <div style="display:flex;justify-content:space-between;align-items:center">
             <div>
               <div style="font-weight:700;font-size:16px">2020 Mercedes-Benz C-Class</div>
               <div class="small" style="color:var(--muted)">Fully serviced • 35,000 km</div>
             </div>
-            <div class="price"><div class="val">₹28,50,000</div></div>
+            <div class="price">
+              <div class="val">₹27,50,000</div>
+            </div>
           </div>
         </div>
       </div>
@@ -96,7 +105,8 @@
     <div class="cards">
       <div class="car fade-up">
         <div class="badge">Certified</div>
-        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1200&q=70" alt="car1">
+        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642?auto=format&fit=crop&w=1200&q=70"
+          alt="car1">
         <h3>2019 BMW 5 Series</h3>
         <div class="meta">Diesel • 42,000 km • Automatic</div>
         <div class="cta-row">
@@ -107,7 +117,8 @@
 
       <div class="car fade-up">
         <div class="badge">New</div>
-        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=70" alt="car2">
+        <img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=70"
+          alt="car2">
         <h3>2018 Audi A6</h3>
         <div class="meta">Petrol • 55,000 km • Automatic</div>
         <div class="cta-row">
@@ -118,7 +129,8 @@
 
       <div class="car fade-up">
         <div class="badge">Hot</div>
-        <img src="https://images.unsplash.com/photo-1519642918688-7e43b1923f8a?auto=format&fit=crop&w=1200&q=70" alt="car3">
+        <img src="https://images.unsplash.com/photo-1519642918688-7e43b1923f8a?auto=format&fit=crop&w=1200&q=70"
+          alt="car3">
         <h3>2020 Jaguar XE</h3>
         <div class="meta">Petrol • 30,000 km • Manual</div>
         <div class="cta-row">
@@ -151,7 +163,12 @@
         <h4>Visit our showroom</h4>
         <p class="small">123 Prestige Drive, Mumbai</p>
         <div style="height:12px"></div>
-        <div style="display:flex;gap:8px;align-items:center"><div style="width:46px;height:46px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center">📞</div><div>+91 98765 43210</div></div>
+        <div style="display:flex;gap:8px;align-items:center">
+          <div
+            style="width:46px;height:46px;border-radius:10px;background:rgba(255,255,255,0.02);display:flex;align-items:center;justify-content:center">
+            📞</div>
+          <div>+91 98765 43210</div>
+        </div>
         <div style="height:12px"></div>
         <div style="display:flex;gap:10px;margin-top:10px">
           <div style="padding:10px;border-radius:10px;background:rgba(255,255,255,0.02);">Financing</div>
@@ -167,38 +184,41 @@
   </footer>
 
   <script>
-    const obs = new IntersectionObserver((entries)=>{
-      entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('in') })
-    },{threshold:0.08})
-    document.querySelectorAll('.fade-up').forEach(el=>obs.observe(el))
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in') })
+    }, { threshold: 0.08 })
+    document.querySelectorAll('.fade-up').forEach(el => obs.observe(el))
 
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
         e.preventDefault();
-        document.querySelector(a.getAttribute('href')).scrollIntoView({behavior:'smooth'});
+        document.querySelector(a.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       })
     })
   </script>
 
   <script type='text/javascript'>
-	function initEmbeddedMessaging() {
-		try {
-			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+    function initEmbeddedMessaging() {
+      try {
+        embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
 
-			embeddedservice_bootstrap.init(
-				'00DgL000006fCcr',
-				'Website_Chat_AutoMobile',
-				'https://orgfarm-45e9ed93aa-dev-ed.develop.my.site.com/ESWWebsiteChatAutoMobil1762089168785',
-				{
-					scrt2URL: 'https://orgfarm-45e9ed93aa-dev-ed.develop.my.salesforce-scrt.com'
-				}
-			);
-		} catch (err) {
-			console.error('Error loading Embedded Messaging: ', err);
-		}
-	};
-</script>
-<script type='text/javascript' src='https://orgfarm-45e9ed93aa-dev-ed.develop.my.site.com/ESWWebsiteChatAutoMobil1762089168785/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+        embeddedservice_bootstrap.init(
+          '00DgL000006fCcr',
+          'Website_Chat_AutoMobile',
+          'https://orgfarm-45e9ed93aa-dev-ed.develop.my.site.com/ESWWebsiteChatAutoMobil1762089168785',
+          {
+            scrt2URL: 'https://orgfarm-45e9ed93aa-dev-ed.develop.my.salesforce-scrt.com'
+          }
+        );
+      } catch (err) {
+        console.error('Error loading Embedded Messaging: ', err);
+      }
+    };
+  </script>
+  <script type='text/javascript'
+    src='https://orgfarm-45e9ed93aa-dev-ed.develop.my.site.com/ESWWebsiteChatAutoMobil1762089168785/assets/js/bootstrap.min.js'
+    onload='initEmbeddedMessaging()'></script>
 
 </body>
+
 </html>
